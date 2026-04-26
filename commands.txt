@@ -1,0 +1,120 @@
+# 🧪 Commands Cheat Sheet
+
+A quick reference of commonly used commands for this project.
+
+---
+
+## 🚀 Start MinIO
+
+```bash
+docker compose up -d
+```
+
+Start the MinIO container in detached mode.
+
+---
+
+## 🛑 Stop MinIO
+
+```bash
+docker compose down
+```
+
+Stop and remove containers.
+
+---
+
+## 🔄 Restart MinIO
+
+```bash
+docker compose restart
+```
+
+Restart running containers.
+
+---
+
+## 📦 Check Running Containers
+
+```bash
+docker ps
+```
+
+List all running Docker containers.
+
+---
+
+## 📜 View Logs
+
+```bash
+docker logs minio
+```
+
+View logs for the MinIO container.
+
+---
+
+## 🧱 Create Storage Directory
+
+```bash
+mkdir -p /mnt/d/minio/data
+```
+
+Create directory on D drive for persistent storage.
+
+---
+
+## 🔐 Fix Docker Permission Issue
+
+```bash
+sudo usermod -aG docker $USER
+wsl --shutdown
+```
+
+Add user to Docker group and restart WSL.
+
+---
+
+## 🐳 Check Docker Installation
+
+```bash
+docker --version
+```
+
+Verify Docker is installed and accessible.
+
+---
+
+## 🧹 Remove Containers & Volumes
+
+```bash
+docker compose down -v
+```
+
+Remove containers along with volumes.
+
+---
+
+## 🔍 Inspect Container
+
+```bash
+docker inspect minio
+```
+
+View detailed configuration of the MinIO container.
+
+---
+
+## 📡 Access MinIO
+
+```bash
+http://localhost:9001
+```
+
+Open MinIO web console.
+
+---
+
+## 💡 Tip
+
+Always ensure Docker Desktop is running before executing commands.
